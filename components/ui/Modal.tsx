@@ -17,9 +17,9 @@ export default function Modal({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-neutral-950/50 transition-opacity lg:items-center">
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-neutral-950/50 transition-opacity sm:items-center">
       {/* Modal Container - Bottom on mobile, centered on large screens */}
-      <div className="w-full max-w-lg transform rounded-t-xl bg-white shadow-xl transition-all lg:w-1/2 lg:rounded-lg dark:bg-neutral-800">
+      <div className="w-full max-w-lg transform rounded-t-xl bg-white shadow-xl transition-all sm:w-1/2 sm:rounded-lg dark:bg-neutral-800">
         {/* Modal Header */}
         <div className="flex items-center justify-between p-4">
           <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">

@@ -11,7 +11,7 @@ export default function ProductCard({
   product: App.Data.ProductData;
 }) {
   return (
-    <div className="rounded-lg bg-white dark:bg-neutral-800 p-4 shadow mb-4">
+    <div className="rounded-lg bg-white dark:bg-neutral-700 p-4 shadow mb-4">
       <ProductImage />
 
       <div className="space-y-3 divide-y-2 divide-neutral-200">

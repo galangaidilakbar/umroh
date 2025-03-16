@@ -22,7 +22,7 @@ export const products: App.Data.ProductData[] = [
     image: "/kaaba.jpg",
     type: "REGULAR",
     duration: "12 HARI",
-    departureDate: "15 Mei 2025",
+    departureDate: "15 May 2025",
     hotels: ["Makkah Hilton Towers (Makkah)", "Shaza Al Madinah (Madinah)"],
     airLine: {
       name: "Lion Air",
@@ -39,7 +39,7 @@ export const products: App.Data.ProductData[] = [
     image: "/kaaba.jpg",
     type: "PREMIUM",
     duration: "14 HARI",
-    departureDate: "20 Mei 2025",
+    departureDate: "20 May 2025",
     hotels: ["Raffles Makkah Palace (Makkah)", "Dar Al Taqwa Hotel (Madinah)"],
     airLine: {
       name: "Saudi Airlines",
@@ -56,7 +56,7 @@ export const products: App.Data.ProductData[] = [
     image: "/kaaba.jpg",
     type: "REGULAR",
     duration: "10 HARI",
-    departureDate: "5 Mei 2025",
+    departureDate: "5 May 2025",
     hotels: ["Al Marwa Rayhaan (Makkah)", "Madinah Movenpick (Madinah)"],
     airLine: {
       name: "Batik Air",

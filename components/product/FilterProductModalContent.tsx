@@ -2,14 +2,15 @@ import { useState } from "react";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import Button from "../ui/Button";
 
-const filterOptions = [
+// Constants moved outside component to avoid re-creation on each render
+const FILTER_OPTIONS = [
   { by: "MONTH", label: "Mau Berangkat Bulan Apa" },
   { by: "TYPE", label: "Pilih Jenis Paketnya" },
   { by: "AIRPORT", label: "Pilih Bandara" },
   { by: null, label: "Cek Promo" },
 ];
 
-const months = [
+const MONTHS = [
   "January",
   "February",
   "March",
@@ -24,9 +25,9 @@ const months = [
   "December",
 ];
 
-const packageTypes = ["PREMIUM", "REGULAR"];
+const PACKAGE_TYPES = ["PREMIUM", "REGULAR"];
 
-const airports = [
+const AIRPORTS = [
   "CGK (Jakarta)",
   "DPS (Bali)",
   "SUB (Surabaya)",
@@ -43,83 +44,75 @@ export default function FilterProductModalContent({
   closeModal,
 }: FilterProductModalContentProps) {
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
-  const [selectedValues, setSelectedValues] = useState<{
-    [key: string]: string;
-  }>({});
+  const [selectedValues, setSelectedValues] = useState<Record<string, string>>(
+    {},
+  );
 
+  // Consolidated filter toggle logic
   const handleFilterToggle = (filterBy: string | null) => {
-    setActiveFilter(activeFilter === filterBy ? null : filterBy);
+    if (filterBy === null) {
+      handleCekPromo();
+    } else {
+      setActiveFilter(activeFilter === filterBy ? null : filterBy);
+    }
   };
 
+  // Select change handler
   const handleSelectChange = (by: string, value: string) => {
     setSelectedValues((prev) => ({ ...prev, [by]: value }));
     onFilterChange({ by, value });
   };
 
+  // Promo handler
   const handleCekPromo = () => {
     onFilterChange({ by: null, value: "PROMO" });
     closeModal();
   };
 
-  const renderContent = (filterBy: string | null) => {
+  // Render select dropdown based on filter type
+  const renderFilterContent = (filterBy: string | null) => {
+    if (!filterBy) return null;
+
+    let options: string[] = [];
     switch (filterBy) {
       case "MONTH":
-        return (
-          <select
-            className="mt-2 w-full rounded border p-2"
-            value={selectedValues.MONTH || ""}
-            onChange={(e) => handleSelectChange("MONTH", e.target.value)}
-          >
-            {months.map((month) => (
-              <option key={month} value={month}>
-                {month}
-              </option>
-            ))}
-          </select>
-        );
+        options = MONTHS;
+        break;
       case "TYPE":
-        return (
-          <select
-            className="mt-2 w-full rounded border p-2"
-            value={selectedValues.TYPE || ""}
-            onChange={(e) => handleSelectChange("TYPE", e.target.value)}
-          >
-            {packageTypes.map((type) => (
-              <option key={type} value={type}>
-                {type}
-              </option>
-            ))}
-          </select>
-        );
+        options = PACKAGE_TYPES;
+        break;
       case "AIRPORT":
-        return (
-          <select
-            className="mt-2 w-full rounded border p-2"
-            value={selectedValues.AIRPORT || ""}
-            onChange={(e) => handleSelectChange("AIRPORT", e.target.value)}
-          >
-            {airports.map((airport) => (
-              <option key={airport} value={airport}>
-                {airport}
-              </option>
-            ))}
-          </select>
-        );
+        options = AIRPORTS;
+        break;
       default:
         return null;
     }
+
+    return (
+      <select
+        className="mt-2 w-full rounded border p-2"
+        value={selectedValues[filterBy] || ""}
+        onChange={(e) => handleSelectChange(filterBy, e.target.value)}
+      >
+        <option value="" disabled>
+          Select {filterBy.toLowerCase()}
+        </option>
+        {options.map((option) => (
+          <option key={option} value={option}>
+            {option}
+          </option>
+        ))}
+      </select>
+    );
   };
 
   return (
     <div className="space-y-4">
-      {filterOptions.map((option) => (
-        <div key={option.by} className="rounded-lg border transition-all">
+      {FILTER_OPTIONS.map((option) => (
+        <div key={option.label} className="rounded-lg border transition-all">
           <div
             className="flex cursor-pointer items-center justify-between p-4"
-            onClick={() => {
-              if (option.by === null) handleCekPromo();
-              else handleFilterToggle(option.by);
-            }}
+            onClick={() => handleFilterToggle(option.by)}
           >
             <span className="font-medium">{option.label}</span>
             {option.by !== null && (
@@ -132,9 +125,8 @@ export default function FilterProductModalContent({
               </Button>
             )}
           </div>
-
           {option.by !== null && activeFilter === option.by && (
-            <div className="border-t p-4">{renderContent(option.by)}</div>
+            <div className="border-t p-4">{renderFilterContent(option.by)}</div>
           )}
         </div>
       ))}

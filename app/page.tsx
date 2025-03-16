@@ -1,9 +1,9 @@
-import UmrohHeader from "@/components/layout/UmrohHeader";
+import FilterableProductCard from "./FilterableProductCard";
 
 export default function Home() {
   return (
     <div>
-      <UmrohHeader />
+      <FilterableProductCard />
     </div>
   );
 }

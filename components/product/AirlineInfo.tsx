@@ -1,4 +1,3 @@
-import { Plane } from "lucide-react";
 import Image from "next/image";
 import { GiCommercialAirplane } from "react-icons/gi";
 

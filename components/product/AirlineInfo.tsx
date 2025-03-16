@@ -23,7 +23,7 @@ export default function AirlineInfo({
       </div>
 
       <div className="flex items-center gap-2">
-        <div className="group-hover:text-blue-400 dark:group-hover:text-blue-300">
+        <div className="text-neutral-700 dark:text-neutral-400 group-hover:text-blue-400 dark:group-hover:text-blue-300">
           <GiCommercialAirplane className="flex-shrink-0" />
         </div>
         <span className="text-sm text-neutral-700 dark:text-neutral-400">

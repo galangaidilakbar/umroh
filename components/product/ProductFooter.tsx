@@ -11,7 +11,7 @@ export default function ProductFooter({ price }: { price: number }) {
         <div>Harga Mulai :</div>
         <div className="font-semibold text-orange-500 dark:text-orange-400">{`IDR ${formattedPrice}`}</div>
       </div>
-      <Button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold rounded-full p-2 text-sm">
+      <Button className="rounded-full bg-blue-600 p-2 text-sm font-bold text-white hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600">
         Lihat Detail Paket
       </Button>
     </div>

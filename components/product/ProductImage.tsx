@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 export const ProductImage = () => (
-  <div className="w-full relative rounded-lg overflow-hidden mb-4">
+  <div className="relative mb-4 w-full overflow-hidden rounded-lg">
     <Image
       src="placeholder_400_200.svg"
       alt="Product visual"
       width={400}
       height={200}
       priority
-      className="w-full h-auto"
+      className="h-auto w-full"
     />
   </div>
 );

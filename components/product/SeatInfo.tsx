@@ -22,7 +22,7 @@ export default function SeatInfo({
 
   return (
     <div className="grid grid-cols-3 items-center gap-2">
-      <div className="w-full bg-gray-200 rounded-full h-2.5 col-span-2">
+      <div className="col-span-2 h-2.5 w-full rounded-full bg-gray-200">
         <div
           className={`${bg} h-2.5 rounded-full transition-all duration-300`}
           style={{ width: `${occupancyPercentage}%` }}

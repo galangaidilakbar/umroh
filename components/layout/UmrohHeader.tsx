@@ -8,10 +8,10 @@ import Modal from "../ui/Modal";
 import FilterProductModalContent from "../product/FilterProductModalContent";
 
 const filterOptions = [
-  'Mau Berangkat Bulan Apa',
-  'Pilih Jenis Paketnya',
-  'Pilih Bandara',
-  'Cek Promo'
+  "Mau Berangkat Bulan Apa",
+  "Pilih Jenis Paketnya",
+  "Pilih Bandara",
+  "Cek Promo",
 ];
 
 export default function UmrohHeader() {
@@ -21,7 +21,7 @@ export default function UmrohHeader() {
   const closeModal = (): void => setShowModal(false);
   return (
     <>
-      <div className="py-4 px-6 flex justify-between items-center">
+      <div className="flex items-center justify-between px-6 py-4">
         <GoArrowLeft />
 
         <h1 className="text-base font-semibold">List Umroh</h1>
@@ -34,7 +34,7 @@ export default function UmrohHeader() {
       </div>
 
       <Modal isOpen={showModal} onClose={closeModal} title="Filter">
-        <FilterProductModalContent options={filterOptions}/>
+        <FilterProductModalContent options={filterOptions} />
       </Modal>
     </>
   );

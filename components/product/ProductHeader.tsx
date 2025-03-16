@@ -10,8 +10,8 @@ export default function ProductHeader({
   departureDate,
 }: ProductHeaderProps) {
   return (
-    <div className="flex justify-between items-start">
-      <div className="font-bold text-base text-neutral-900 dark:text-white">
+    <div className="flex items-start justify-between">
+      <div className="text-base font-bold text-neutral-900 dark:text-white">
         <h3>{title}</h3>
         <p>{duration}</p>
       </div>

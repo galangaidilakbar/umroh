@@ -11,7 +11,7 @@ export default function ProductCard({
   product: App.Data.ProductData;
 }) {
   return (
-    <div className="rounded-xl group bg-white dark:bg-neutral-700 hover:bg-blue-50 dark:hover:bg-neutral-800 hover:ring-2 hover:ring-blue-200 dark:hover:ring-neutral-700 p-4 shadow mb-4">
+    <div className="group mb-4 rounded-xl bg-white p-4 shadow hover:bg-blue-50 hover:ring-2 hover:ring-blue-200 dark:bg-neutral-700 dark:hover:bg-neutral-800 dark:hover:ring-neutral-700">
       <ProductImage />
 
       <div className="space-y-3 divide-y-2 divide-neutral-200">

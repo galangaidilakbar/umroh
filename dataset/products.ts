@@ -2,6 +2,7 @@ export const products: App.Data.ProductData[] = [
   {
     id: 1,
     title: "UMROH SYAWAL PREMIUM",
+    image: "/kaaba.jpg",
     duration: "14 HARI",
     departureDate: "10 April 2025",
     hotels: ["Al Safwah Royale Orchid (Makkah)", "Ruvel Al Madinah (Madinah)"],
@@ -17,6 +18,7 @@ export const products: App.Data.ProductData[] = [
   {
     id: 2,
     title: "UMROH RAMADHAN REGULAR",
+    image: "/kaaba.jpg",
     duration: "12 HARI",
     departureDate: "15 Mei 2025",
     hotels: ["Makkah Hilton Towers (Makkah)", "Shaza Al Madinah (Madinah)"],
@@ -32,6 +34,7 @@ export const products: App.Data.ProductData[] = [
   {
     id: 3,
     title: "UMROH RAMADHAN PREMIUM",
+    image: "/kaaba.jpg",
     duration: "14 HARI",
     departureDate: "20 Mei 2025",
     hotels: ["Raffles Makkah Palace (Makkah)", "Dar Al Taqwa Hotel (Madinah)"],
@@ -47,6 +50,7 @@ export const products: App.Data.ProductData[] = [
   {
     id: 4,
     title: "UMROH SYAWAL REGULAR",
+    image: "/kaaba.jpg",
     duration: "10 HARI",
     departureDate: "5 Mei 2025",
     hotels: ["Al Marwa Rayhaan (Makkah)", "Madinah Movenpick (Madinah)"],
@@ -62,6 +66,7 @@ export const products: App.Data.ProductData[] = [
   {
     id: 5,
     title: "UMROH KHUSUS KELUARGA",
+    image: "/kaaba.jpg",
     duration: "14 HARI",
     departureDate: "1 Juni 2025",
     hotels: ["InterContinental (Makkah)", "Hilton Garden Inn (Madinah)"],
@@ -77,6 +82,7 @@ export const products: App.Data.ProductData[] = [
   {
     id: 6,
     title: "UMROH SPESIAL HONEYMOON",
+    image: "/kaaba.jpg",
     duration: "12 HARI",
     departureDate: "10 Juli 2025",
     hotels: [

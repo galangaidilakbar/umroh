@@ -12,7 +12,7 @@ export default function ProductCard({
 }) {
   return (
     <div className="group mb-4 rounded-xl bg-white p-4 shadow hover:bg-blue-50 hover:ring-2 hover:ring-blue-200 dark:bg-neutral-700 dark:hover:bg-neutral-800 dark:hover:ring-neutral-700">
-      <ProductImage />
+      <ProductImage image={product.image} alt={product.title} />
 
       <div className="space-y-3 divide-y-2 divide-neutral-200">
         <ProductHeader

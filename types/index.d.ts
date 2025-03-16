@@ -2,6 +2,7 @@ declare namespace App.Data {
   export type ProductData = {
     id: number;
     title: string;
+    image: string;
     duration: string;
     departureDate: string;
     hotels: string[];

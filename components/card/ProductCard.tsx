@@ -21,14 +21,16 @@ export default function ProductCard({
       <div className="space-y-3">
         <div className="flex justify-between items-start">
           <div>
-            <h3 className="font-bold text-lg text-gray-900">{product.title}</h3>
+            <h3 className="font-bold text-base text-gray-900">{product.title}</h3>
             <p className="text-gray-700">{product.duration}</p>
           </div>
-          <div className="text-right">
-            <p className="text-sm text-gray-700">Berangkat</p>
-            <p className="font-medium">{product.departureDate}</p>
+          <div className="text-right text-sm">
+            <p className="text-gray-700">Berangkat</p>
+            <p className="font-semibold">{product.departureDate}</p>
           </div>
         </div>
+
+        <div className="border h-[1px] border-neutral-300"></div>
       </div>
     </div>
   );

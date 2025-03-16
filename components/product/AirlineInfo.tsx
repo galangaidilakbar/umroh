@@ -1,5 +1,6 @@
 import { Plane } from "lucide-react";
 import Image from "next/image";
+import { GiCommercialAirplane } from "react-icons/gi";
 
 export default function AirlineInfo({
   logo,
@@ -23,7 +24,7 @@ export default function AirlineInfo({
 
       <div className="flex items-center gap-2">
         <div className="group-hover:text-blue-400 dark:group-hover:text-blue-300">
-          <Plane className="flex-shrink-0" />
+          <GiCommercialAirplane className="flex-shrink-0" />
         </div>
         <span className="text-sm text-neutral-700 dark:text-neutral-400">
           {departureAirport}

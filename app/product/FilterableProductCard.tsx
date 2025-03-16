@@ -1,4 +1,4 @@
-import ProductCard from "@/components/card/ProductCard";
+import ProductCard from "@/components/product/ProductCard";
 import UmrohHeader from "@/components/layout/UmrohHeader";
 
 export default function FilterableProductCard({

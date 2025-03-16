@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c7be0" />
+      <stop offset="100%" stop-color="#2451a5" />
+    </linearGradient>
+
+    <!-- Pattern definition -->
+    <pattern id="islamic-pattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+      <!-- Star pattern elements -->
+      <path d="M0 50 L25 40 L50 50 L40 25 L50 0 L25 10 L0 0 L10 25 Z" fill="none" stroke="#4a8aee" stroke-width="1" opacity="0.4" />
+      <path d="M50 0 L75 10 L100 0 L90 25 L100 50 L75 40 L50 50 L60 25 Z" fill="none" stroke="#4a8aee" stroke-width="1" opacity="0.4" />
+      <path d="M0 50 L10 75 L0 100 L25 90 L50 100 L40 75 L50 50 L25 60 Z" fill="none" stroke="#4a8aee" stroke-width="1" opacity="0.4" />
+      <path d="M50 50 L75 60 L100 50 L90 75 L100 100 L75 90 L50 100 L60 75 Z" fill="none" stroke="#4a8aee" stroke-width="1" opacity="0.4" />
+
+      <!-- Geometric circular elements -->
+      <circle cx="50" cy="50" r="15" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.3" />
+      <circle cx="0" cy="0" r="15" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.3" />
+      <circle cx="100" cy="0" r="15" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.3" />
+      <circle cx="0" cy="100" r="15" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.3" />
+      <circle cx="100" cy="100" r="15" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.3" />
+
+      <!-- Additional decorative elements -->
+      <path d="M25 25 L75 25 L75 75 L25 75 Z" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.2" />
+      <path d="M40 40 L60 40 L60 60 L40 60 Z" fill="none" stroke="#4a8aee" stroke-width="0.5" opacity="0.2" />
+    </pattern>
+  </defs>
+
+  <!-- Background rectangle with gradient -->
+  <rect width="100%" height="100%" fill="url(#bg-gradient)" />
+
+  <!-- Pattern overlay -->
+  <rect width="100%" height="100%" fill="url(#islamic-pattern)" />
+</svg>

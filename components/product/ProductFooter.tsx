@@ -9,9 +9,9 @@ export default function ProductFooter({ price }: { price: number }) {
     <div className="grid grid-cols-2 items-center">
       <div>
         <div>Harga Mulai :</div>
-        <div className="font-semibold text-orange-500">{`IDR ${formattedPrice}`}</div>
+        <div className="font-semibold text-orange-500 dark:text-orange-400">{`IDR ${formattedPrice}`}</div>
       </div>
-      <Button className="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full p-2 text-sm">
+      <Button className="bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white font-bold rounded-full p-2 text-sm">
         Lihat Detail Paket
       </Button>
     </div>

@@ -88,7 +88,7 @@ export const products: App.Data.ProductData[] = [
       logo: "/logo/airlines/emirates.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
-    remainingSeats: 60,
+    remainingSeats: 47,
     totalSeats: 150,
     price: 42000000,
   },

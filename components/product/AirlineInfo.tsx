@@ -16,12 +16,16 @@ export default function AirlineInfo({
           height={1024}
           className="w-6 h-6"
         />
-        <span className="text-sm text-gray-700">{name}</span>
+        <span className="text-sm text-neutral-700 dark:text-neutral-400">
+          {name}
+        </span>
       </div>
 
       <div className="flex items-center gap-2">
         <Plane className="flex-shrink-0" />
-        <span className="text-sm text-gray-700">{departureAirport}</span>
+        <span className="text-sm text-neutral-700 dark:text-neutral-400">
+          {departureAirport}
+        </span>
       </div>
     </>
   );

@@ -1,4 +1,5 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import Button from "../ui/Button";
 
 export default function FilterProductModalContent({
   options,
@@ -13,9 +14,9 @@ export default function FilterProductModalContent({
           key={index}
         >
           <div>{option}</div>
-          <div>
+          <Button>
             <MdOutlineKeyboardArrowDown />
-          </div>
+          </Button>
         </div>
       ))}
     </>

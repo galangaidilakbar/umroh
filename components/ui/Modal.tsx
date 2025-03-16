@@ -1,15 +1,20 @@
 interface ModalProps {
-    isOpen: boolean;
-    onClose: () => void;
-    title: string;
-    children: React.ReactNode
+  isOpen: boolean;
+  onClose: () => void;
+  title: string;
+  children: React.ReactNode;
 }
 
-export default function Modal({ isOpen, onClose, title, children }: ModalProps) {
+export default function Modal({
+  isOpen,
+  onClose,
+  title,
+  children,
+}: ModalProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end lg:items-center justify-center bg-black bg-opacity-50 transition-opacity">
+    <div className="fixed inset-0 z-50 flex items-end lg:items-center justify-center bg-black/50 bg-opacity-50 transition-opacity">
       {/* Modal Container - Bottom on mobile, centered on large screens */}
       <div className="bg-white rounded-t-lg lg:rounded-lg w-full lg:w-1/2 max-w-lg shadow-xl transform transition-all">
         {/* Modal Header */}
@@ -19,17 +24,25 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
             onClick={onClose}
             className="text-gray-400 hover:text-gray-500 focus:outline-none"
           >
-            <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            <svg
+              className="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
             </svg>
           </button>
         </div>
-        
+
         {/* Modal Content */}
-        <div className="p-4">
-          {children}
-        </div>
-        
+        <div className="p-4">{children}</div>
+
         {/* Modal Footer */}
         <div className="bg-gray-50 px-4 py-3 sm:px-6 flex flex-col sm:flex-row-reverse gap-2 rounded-b-lg">
           <button
@@ -49,4 +62,4 @@ export default function Modal({ isOpen, onClose, title, children }: ModalProps) 
       </div>
     </div>
   );
-};
+}

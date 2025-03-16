@@ -1,9 +1,15 @@
-export default function Button({
-  children,
-  className,
-}: {
-  children: React.ReactNode;
+"use client";
+
+import { ComponentPropsWithoutRef } from "react";
+
+type ButtonProps = ComponentPropsWithoutRef<"button"> & {
   className?: string;
-}) {
-  return <button className={className}>{children}</button>;
+};
+
+export default function Button({ children, className, ...rest }: ButtonProps) {
+  return (
+    <button className={className} {...rest}>
+      {children}
+    </button>
+  );
 }

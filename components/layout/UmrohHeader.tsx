@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { PiSlidersHorizontalLight } from "react-icons/pi";
 import { GoArrowLeft } from "react-icons/go";
@@ -7,7 +7,7 @@ import { useState } from "react";
 import Modal from "../ui/Modal";
 
 export default function UmrohHeader() {
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState(false);
 
   const openModal = (): void => setShowModal(true);
   const closeModal = (): void => setShowModal(false);
@@ -18,15 +18,18 @@ export default function UmrohHeader() {
 
         <h1 className="text-base font-semibold">List Umroh</h1>
 
-        <button className="flex items-center gap-2" onClick={openModal}>
+        <Button className="flex items-center gap-2" onClick={openModal}>
           <PiSlidersHorizontalLight />
 
           <span className="text-xs">Filter</span>
-        </button>
+        </Button>
       </div>
 
       <Modal isOpen={showModal} onClose={closeModal} title="Example Modal">
-        <p>This is a responsive modal that appears at the bottom on mobile screens and in the center on larger screens.</p>
+        <p>
+          This is a responsive modal that appears at the bottom on mobile
+          screens and in the center on larger screens.
+        </p>
         <p className="mt-2">You can add any content here.</p>
       </Modal>
     </>

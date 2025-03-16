@@ -14,5 +14,5 @@ declare namespace App.Data {
   export type AirLineData = {
     name: string;
     logo: string;
-  }
+  };
 }

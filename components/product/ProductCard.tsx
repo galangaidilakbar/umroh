@@ -3,6 +3,7 @@ import ProductHeader from "./ProductHeader";
 import HotelInfo from "./HotelInfo";
 import AirlineInfo from "./AirlineInfo";
 import SeatInfo from "./SeatInfo";
+import ProductFooter from "./ProductFooter";
 
 export default function ProductCard({
   product,
@@ -38,6 +39,7 @@ export default function ProductCard({
             totalSeats={product.totalSeats}
           />
           <div>price</div>
+          <ProductFooter />
         </div>
       </div>
     </div>

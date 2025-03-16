@@ -1,9 +1,3 @@
-export default function Button({
-    childern,
-}: { childern: React.ReactNode }) {
-    return (
-        <button>
-            {childern}
-        </button>
-    )
+export default function Button({ children }: { children: React.ReactNode }) {
+  return <button>{children}</button>;
 }

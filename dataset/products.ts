@@ -7,11 +7,11 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Al Safwah Royale Orchid (Makkah)", "Ruvel Al Madinah (Madinah)"],
     airLine: {
       name: "Garuda Indonesia",
-      logo: "/logo/airlines/garuda-indonesia.png"
+      logo: "/logo/airlines/garuda-indonesia.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 10,
-    totalSeats: 20,
+    totalSeats: 150,
     price: 36500000,
   },
   {
@@ -22,11 +22,11 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Makkah Hilton Towers (Makkah)", "Shaza Al Madinah (Madinah)"],
     airLine: {
       name: "Lion Air",
-      logo: "/logo/airlines/lion-air.png"
+      logo: "/logo/airlines/lion-air.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
-    remainingSeats: 5,
-    totalSeats: 15,
+    remainingSeats: 30,
+    totalSeats: 150,
     price: 29500000,
   },
   {
@@ -37,11 +37,11 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Raffles Makkah Palace (Makkah)", "Dar Al Taqwa Hotel (Madinah)"],
     airLine: {
       name: "Saudi Airlines",
-      logo: "/logo/airlines/saudi-airline.png"
+      logo: "/logo/airlines/saudi-airline.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
-    remainingSeats: 8,
-    totalSeats: 20,
+    remainingSeats: 50,
+    totalSeats: 150,
     price: 45000000,
   },
   {
@@ -52,11 +52,11 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Al Marwa Rayhaan (Makkah)", "Madinah Movenpick (Madinah)"],
     airLine: {
       name: "Batik Air",
-      logo: "/logo/airlines/batik-air.png"
+      logo: "/logo/airlines/batik-air.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
-    remainingSeats: 12,
-    totalSeats: 20,
+    remainingSeats: 7,
+    totalSeats: 150,
     price: 28000000,
   },
   {
@@ -67,11 +67,11 @@ export const products: App.Data.ProductData[] = [
     hotels: ["InterContinental (Makkah)", "Hilton Garden Inn (Madinah)"],
     airLine: {
       name: "Qatar Airways",
-      logo: "/logo/airlines/qatar-airways.png"
+      logo: "/logo/airlines/qatar-airways.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
-    remainingSeats: 15,
-    totalSeats: 20,
+    remainingSeats: 27,
+    totalSeats: 150,
     price: 40000000,
   },
   {
@@ -85,11 +85,11 @@ export const products: App.Data.ProductData[] = [
     ],
     airLine: {
       name: "Emirates",
-      logo: "/logo/airlines/emirates.png"
+      logo: "/logo/airlines/emirates.png",
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
-    remainingSeats: 7,
-    totalSeats: 15,
+    remainingSeats: 60,
+    totalSeats: 150,
     price: 42000000,
   },
 ];

@@ -2,6 +2,7 @@ import { ProductImage } from "./ProductImage";
 import ProductHeader from "./ProductHeader";
 import HotelInfo from "./HotelInfo";
 import AirlineInfo from "./AirlineInfo";
+import SeatInfo from "./SeatInfo";
 
 export default function ProductCard({
   product,
@@ -31,8 +32,11 @@ export default function ProductCard({
           />
         </div>
 
-        <div>
-          <div>slider</div>
+        <div className="space-y-3">
+          <SeatInfo
+            remainingSeats={product.remainingSeats}
+            totalSeats={product.totalSeats}
+          />
           <div>price</div>
         </div>
       </div>

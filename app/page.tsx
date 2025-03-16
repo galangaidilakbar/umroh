@@ -3,7 +3,7 @@ import FilterableProductCard from "./product/FilterableProductCard";
 
 export default function Home() {
   return (
-    <div>
+    <div className="container mx-auto">
       <FilterableProductCard products={products} />
     </div>
   );

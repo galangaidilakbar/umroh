@@ -21,9 +21,9 @@ export default function ProductCard({
 
       <div className="space-y-3 divide-y-2 divide-neutral-200">
         <div className="flex justify-between items-start">
-          <div>
-            <h3 className="font-bold text-base text-gray-900">{product.title}</h3>
-            <p className="text-gray-700">{product.duration}</p>
+          <div className="font-bold text-base text-gray-900">
+            <h3>{product.title}</h3>
+            <p>{product.duration}</p>
           </div>
           <div className="text-right text-sm">
             <p className="text-gray-700">Berangkat</p>
@@ -49,22 +49,22 @@ export default function ProductCard({
               height={1024}
               className="w-6 h-6"
             />
-            <span className="text-sm text-gray-700">{product.airLine.name}</span>
+            <span className="text-sm text-gray-700">
+              {product.airLine.name}
+            </span>
           </div>
 
           <div className="flex items-center gap-2">
             <Plane />
-            <span className="text-sm text-gray-700">{product.departureAirport}</span>
+            <span className="text-sm text-gray-700">
+              {product.departureAirport}
+            </span>
           </div>
         </div>
 
         <div>
-          <div>
-            slider
-          </div>
-          <div>
-            price
-          </div>
+          <div>slider</div>
+          <div>price</div>
         </div>
       </div>
     </div>

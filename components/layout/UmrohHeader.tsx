@@ -5,6 +5,14 @@ import { GoArrowLeft } from "react-icons/go";
 import Button from "../ui/Button";
 import { useState } from "react";
 import Modal from "../ui/Modal";
+import FilterProductModalContent from "../product/FilterProductModalContent";
+
+const filterOptions = [
+  'Mau Berangkat Bulan Apa',
+  'Pilih Jenis Paketnya',
+  'Pilih Bandara',
+  'Cek Promo'
+];
 
 export default function UmrohHeader() {
   const [showModal, setShowModal] = useState(false);
@@ -26,11 +34,7 @@ export default function UmrohHeader() {
       </div>
 
       <Modal isOpen={showModal} onClose={closeModal} title="Filter">
-        <p>
-          This is a responsive modal that appears at the bottom on mobile
-          screens and in the center on larger screens.
-        </p>
-        <p className="mt-2">You can add any content here.</p>
+        <FilterProductModalContent options={filterOptions}/>
       </Modal>
     </>
   );

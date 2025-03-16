@@ -13,6 +13,7 @@ export default function ProductCard({
           alt={product.title}
           width={400}
           height={200}
+          priority={true}
           className="w-full h-auto"
         />
       </div>

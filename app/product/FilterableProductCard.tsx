@@ -10,9 +10,11 @@ export default function FilterableProductCard({
     <div>
       <UmrohHeader />
 
-      {products.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+      <div className="p-4">
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+      </div>
     </div>
   );
 }

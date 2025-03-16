@@ -39,7 +39,7 @@ export default function ProductCard({
             totalSeats={product.totalSeats}
           />
           <div>price</div>
-          <ProductFooter />
+          <ProductFooter price={product.price} />
         </div>
       </div>
     </div>

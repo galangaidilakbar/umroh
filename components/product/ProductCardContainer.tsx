@@ -6,12 +6,6 @@ const getMonthName = (dateString: string) => {
   return date.toLocaleString("default", { month: "long" });
 };
 
-// Helper to extract airport code from departure string
-const getAirportCode = (departure: string) => {
-  const matches = departure.match(/\(([A-Z]{3})\)/);
-  return matches ? matches[1] : null;
-};
-
 export default function ProductCardContainer({
   products,
   filter,
@@ -31,8 +25,9 @@ export default function ProductCardContainer({
         return product.type.toLowerCase() === filter.value.toLowerCase();
 
       case "AIRPORT":
-        const productAirportCode = getAirportCode(product.departureAirport);
-        return productAirportCode === filter.value;
+        return (
+          product.departureAirport.toLowerCase() === filter.value.toLowerCase()
+        );
 
       default:
         return true;

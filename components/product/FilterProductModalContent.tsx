@@ -28,10 +28,9 @@ const MONTHS = [
 const PACKAGE_TYPES = ["PREMIUM", "REGULAR"];
 
 const AIRPORTS = [
-  "CGK (Jakarta)",
-  "DPS (Bali)",
-  "SUB (Surabaya)",
-  "UPG (Makassar)",
+  "Soekarno-Hatta International Airport (CGK)",
+  "Ngurah Rai International Airport (DPS)",
+  "Juanda International Airport (SUB)",
 ];
 
 interface FilterProductModalContentProps {

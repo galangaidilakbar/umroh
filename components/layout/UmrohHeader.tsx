@@ -1,14 +1,17 @@
-import { MoveLeft, SlidersHorizontal } from "lucide-react";
+import { PiSlidersHorizontalLight } from "react-icons/pi";
+import { GoArrowLeft } from "react-icons/go";
 
 export default function UmrohHeader() {
   return (
     <div className="py-4 px-6 flex justify-between items-center">
-      <MoveLeft />
+      <GoArrowLeft />
+
 
       <h1 className="text-base font-semibold">List Umroh</h1>
 
       <button className="flex items-center gap-2">
-        <SlidersHorizontal />
+        <PiSlidersHorizontalLight />
+
         <span className="text-xs">Filter</span>
       </button>
     </div>

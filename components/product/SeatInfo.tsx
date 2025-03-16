@@ -28,7 +28,7 @@ export default function SeatInfo({
           style={{ width: `${occupancyPercentage}%` }}
         ></div>
       </div>
-      <div className={`text-right text-sm font-semibold ${text}`}>
+      <div className={`text-right text-xs font-semibold ${text}`}>
         Tersisa {remainingSeats} Seat
       </div>
     </div>

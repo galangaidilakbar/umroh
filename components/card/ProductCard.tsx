@@ -31,8 +31,6 @@ export default function ProductCard({
           </div>
         </div>
 
-        {/* <div className="border-t h-[1px] border-neutral-300"></div> */}
-
         <div className="space-y-2 py-2">
           {product.hotels.map((hotel, index) => (
             <div key={index} className="flex items-center gap-2">

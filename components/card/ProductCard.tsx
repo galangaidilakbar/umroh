@@ -42,8 +42,14 @@ export default function ProductCard({
           ))}
 
           <div className="flex items-center gap-2">
-            <Bird />
-            <span className="text-sm text-gray-700">{product.airLine}</span>
+            <Image
+              src={product.airLine.logo}
+              alt={product.airLine.name}
+              width={1024}
+              height={1024}
+              className="w-5 h-5"
+            />
+            <span className="text-sm text-gray-700">{product.airLine.name}</span>
           </div>
 
           <div className="flex items-center gap-2">

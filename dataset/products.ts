@@ -7,7 +7,7 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Al Safwah Royale Orchid (Makkah)", "Ruvel Al Madinah (Madinah)"],
     airLine: {
       name: "Garuda Indonesia",
-      logo: "icon/airlines/garuda-indonesia.png"
+      logo: "/logo/airlines/garuda-indonesia.png"
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 10,
@@ -22,7 +22,7 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Makkah Hilton Towers (Makkah)", "Shaza Al Madinah (Madinah)"],
     airLine: {
       name: "Lion Air",
-      logo: "icon/airlines/lion-air.png"
+      logo: "/logo/airlines/lion-air.png"
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 5,
@@ -37,7 +37,7 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Raffles Makkah Palace (Makkah)", "Dar Al Taqwa Hotel (Madinah)"],
     airLine: {
       name: "Saudi Airlines",
-      logo: "icon/airlines/saudi-airline.png"
+      logo: "/logo/airlines/saudi-airline.png"
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 8,
@@ -52,7 +52,7 @@ export const products: App.Data.ProductData[] = [
     hotels: ["Al Marwa Rayhaan (Makkah)", "Madinah Movenpick (Madinah)"],
     airLine: {
       name: "Batik Air",
-      logo: "icon/airlines/batik-air.png"
+      logo: "/logo/airlines/batik-air.png"
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 12,
@@ -67,7 +67,7 @@ export const products: App.Data.ProductData[] = [
     hotels: ["InterContinental (Makkah)", "Hilton Garden Inn (Madinah)"],
     airLine: {
       name: "Qatar Airways",
-      logo: "icon/airlines/qatar-airways.png"
+      logo: "/logo/airlines/qatar-airways.png"
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 15,
@@ -85,7 +85,7 @@ export const products: App.Data.ProductData[] = [
     ],
     airLine: {
       name: "Emirates",
-      logo: "icon/airlines/emirates.png"
+      logo: "/logo/airlines/emirates.png"
     },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 7,

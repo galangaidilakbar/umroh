@@ -9,8 +9,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Travel",
-  description: "Find your next adventure",
+  title: "Umroh",
+  description: "Temukan perjalanan umroh istimewa bersama kami",
 };
 
 export default function RootLayout({

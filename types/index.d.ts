@@ -5,10 +5,14 @@ declare namespace App.Data {
     duration: string;
     departureDate: string;
     hotels: string[];
-    airLine: string;
+    airLine: AirLineData;
     departureAirport: string;
     remainingSeats: number;
     totalSeats: number;
     price: number;
   };
+  export type AirLineData = {
+    name: string;
+    logo: string;
+  }
 }

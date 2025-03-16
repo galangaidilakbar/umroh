@@ -1,3 +1,4 @@
+import { Bird, Building2, Plane } from "lucide-react";
 import Image from "next/image";
 
 export default function ProductCard({
@@ -30,7 +31,26 @@ export default function ProductCard({
           </div>
         </div>
 
-        <div className="border h-[1px] border-neutral-300"></div>
+        <div className="border-t h-[1px] border-neutral-300"></div>
+
+        <div className="space-y-2 py-2">
+          {product.hotels.map((hotel, index) => (
+            <div key={index} className="flex items-center gap-2">
+              <Building2 />
+              <span className="text-sm text-gray-700">{hotel}</span>
+            </div>
+          ))}
+
+          <div className="flex items-center gap-2">
+            <Bird />
+            <span className="text-sm text-gray-700">{product.airLine}</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <Plane />
+            <span className="text-sm text-gray-700">{product.departureAirport}</span>
+          </div>
+        </div>
       </div>
     </div>
   );

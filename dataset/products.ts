@@ -1,11 +1,14 @@
-export const products = [
+export const products: App.Data.ProductData[] = [
   {
     id: 1,
     title: "UMROH SYAWAL PREMIUM",
     duration: "14 HARI",
     departureDate: "10 April 2025",
     hotels: ["Al Safwah Royale Orchid (Makkah)", "Ruvel Al Madinah (Madinah)"],
-    airLine: "Garuda Indonesia",
+    airLine: {
+      name: "Garuda Indonesia",
+      logo: "icon/airlines/garuda-indonesia.png"
+    },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 10,
     totalSeats: 20,
@@ -17,7 +20,10 @@ export const products = [
     duration: "12 HARI",
     departureDate: "15 Mei 2025",
     hotels: ["Makkah Hilton Towers (Makkah)", "Shaza Al Madinah (Madinah)"],
-    airLine: "Lion Air",
+    airLine: {
+      name: "Lion Air",
+      logo: "icon/airlines/lion-air.png"
+    },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 5,
     totalSeats: 15,
@@ -29,7 +35,10 @@ export const products = [
     duration: "14 HARI",
     departureDate: "20 Mei 2025",
     hotels: ["Raffles Makkah Palace (Makkah)", "Dar Al Taqwa Hotel (Madinah)"],
-    airLine: "Saudi Airlines",
+    airLine: {
+      name: "Saudi Airlines",
+      logo: "icon/airlines/saudi-airline.png"
+    },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 8,
     totalSeats: 20,
@@ -41,7 +50,10 @@ export const products = [
     duration: "10 HARI",
     departureDate: "5 Mei 2025",
     hotels: ["Al Marwa Rayhaan (Makkah)", "Madinah Movenpick (Madinah)"],
-    airLine: "Batik Air",
+    airLine: {
+      name: "Batik Air",
+      logo: "icon/airlines/batik-air.png"
+    },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 12,
     totalSeats: 20,
@@ -53,7 +65,10 @@ export const products = [
     duration: "14 HARI",
     departureDate: "1 Juni 2025",
     hotels: ["InterContinental (Makkah)", "Hilton Garden Inn (Madinah)"],
-    airLine: "Qatar Airways",
+    airLine: {
+      name: "Qatar Airways",
+      logo: "icon/airlines/qatar-airways.png"
+    },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 15,
     totalSeats: 20,
@@ -68,7 +83,10 @@ export const products = [
       "Swissotel Al Maqam (Makkah)",
       "Anwar Al Madinah Movenpick (Madinah)",
     ],
-    airLine: "Emirates",
+    airLine: {
+      name: "Emirates",
+      logo: "icon/airlines/emirates.png"
+    },
     departureAirport: "Soekarno-Hatta International Airport (CGK)",
     remainingSeats: 7,
     totalSeats: 15,

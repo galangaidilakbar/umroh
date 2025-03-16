@@ -2,6 +2,7 @@ declare namespace App.Data {
   export type ProductData = {
     id: number;
     title: string;
+    type: "PREMIUM" | "REGULAR";
     image: string;
     duration: string;
     departureDate: string;
@@ -15,5 +16,9 @@ declare namespace App.Data {
   export type AirLineData = {
     name: string;
     logo: string;
+  };
+  export type Filter = {
+    by: "MONTH" | "TYPE" | "AIRPORT" | null;
+    value: string;
   };
 }

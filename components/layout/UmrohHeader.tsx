@@ -7,14 +7,11 @@ import { useState } from "react";
 import Modal from "../ui/Modal";
 import FilterProductModalContent from "../product/FilterProductModalContent";
 
-const filterOptions = [
-  "Mau Berangkat Bulan Apa",
-  "Pilih Jenis Paketnya",
-  "Pilih Bandara",
-  "Cek Promo",
-];
-
-export default function UmrohHeader() {
+export default function UmrohHeader({
+  onFilterChange,
+}: {
+  onFilterChange: (filter: { by: string | null; value: string }) => void;
+}) {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = (): void => setShowModal(true);
@@ -34,7 +31,10 @@ export default function UmrohHeader() {
       </div>
 
       <Modal isOpen={showModal} onClose={closeModal} title="Filter">
-        <FilterProductModalContent options={filterOptions} />
+        <FilterProductModalContent
+          onFilterChange={onFilterChange}
+          closeModal={closeModal}
+        />
       </Modal>
     </>
   );

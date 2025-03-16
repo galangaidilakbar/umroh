@@ -1,11 +1,19 @@
+"use client";
+
 import UmrohHeader from "@/components/layout/UmrohHeader";
 import ProductCardContainer from "@/components/product/ProductCardContainer";
+import { useState } from "react";
 
 export default function FilterableProductCard({
   products,
 }: {
   products: App.Data.ProductData[];
 }) {
+  const [filter, setFilter] = useState<{ by: string | null; value: string }>({
+    by: null,
+    value: "",
+  });
+
   return (
     <div className="relative min-h-screen">
       {/* Background Pattern */}
@@ -13,9 +21,9 @@ export default function FilterableProductCard({
 
       {/* Content */}
       <div className="relative z-10">
-        <UmrohHeader />
+        <UmrohHeader onFilterChange={setFilter} />
 
-        <ProductCardContainer products={products} />
+        <ProductCardContainer products={products} filter={filter} />
       </div>
     </div>
   );

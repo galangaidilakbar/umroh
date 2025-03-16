@@ -1,4 +1,4 @@
-import FilterableProductCard from "./FilterableProductCard";
+import FilterableProductCard from "./product/FilterableProductCard";
 
 export default function Home() {
   return (

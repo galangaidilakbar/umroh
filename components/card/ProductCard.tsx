@@ -47,7 +47,7 @@ export default function ProductCard({
               alt={product.airLine.name}
               width={1024}
               height={1024}
-              className="w-5 h-5"
+              className="w-6 h-6"
             />
             <span className="text-sm text-gray-700">{product.airLine.name}</span>
           </div>

@@ -1,3 +1,9 @@
+import UmrohHeader from "@/components/layout/UmrohHeader";
+
 export default function Home() {
-  return <div>hello world</div>;
+  return (
+    <div>
+      <UmrohHeader />
+    </div>
+  );
 }

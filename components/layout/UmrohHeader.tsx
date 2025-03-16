@@ -25,7 +25,7 @@ export default function UmrohHeader() {
         </Button>
       </div>
 
-      <Modal isOpen={showModal} onClose={closeModal} title="Example Modal">
+      <Modal isOpen={showModal} onClose={closeModal} title="Filter">
         <p>
           This is a responsive modal that appears at the bottom on mobile
           screens and in the center on larger screens.

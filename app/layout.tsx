@@ -9,8 +9,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Umroh",
-  description: "Temukan perjalanan umroh istimewa bersama kami",
+  title: "Paket Umroh Terbaik",
+  description:
+    "Jelajahi berbagai paket umroh terbaik dan temukan perjalanan spiritual Anda bersama kami.",
 };
 
 export default function RootLayout({

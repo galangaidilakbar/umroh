@@ -4,7 +4,7 @@ import { FaTriangleExclamation } from "react-icons/fa6";
 // Helper function to extract month name from date string
 const getMonthName = (dateString: string) => {
   const date = new Date(dateString);
-  return date.toLocaleString("default", { month: "long" });
+  return date.toLocaleString("en-US", { month: "long" });
 };
 
 export default function ProductCardContainer({
